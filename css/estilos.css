@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+main, #menu, h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+}
+
+#menu {
+    background-color: blueviolet;
+    top: 0;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 140%;
+    margin-top: -5px;
+}
+
+#menu ul, #escuchar div a {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#menu ul li {
+    text-align: center;
+}
+
+#menu a, footer {
+    color: white;
+    text-decoration: none;
+}
+
+#menu span {
+    text-decoration: underline;
+}
+
+main{
+    justify-content: center;
+    padding: 5% 10%;
+    background-color: whitesmoke;
+}
+
+#inicio{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+h2, h3 {
+    padding-top: 2%;
+}
+
+p {
+    margin: 2% 0;
+    text-align: justify;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+#introduccion p{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+#introduccion img{
+    width: 50%;
+    margin-left: 2%;
+    float: right;
+}
+
+#escuchar{
+    padding: 10% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 4%;
+    margin-bottom: 10px;
+}
+
+#escuchar img, #about img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#discografia {
+text-align: center;
+}
+
+#discografia img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.canciones {
+    margin: 5%;
+    background-color:  blueviolet;
+    border: 3px solid blueviolet;
+    border-radius: 50px;
+}
+
+.canciones h3{
+    font-size: 150%;
+    margin-top: 2%;
+    color: whitesmoke;
+}
+
+.canciones ol{
+    padding: 5%;
+}
+
+.canciones li{
+    border: 1px solid rgb(201, 176, 221);
+    border-radius: 10px;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.canciones li:nth-child(odd){
+    background-color: rgb(201, 176, 221);
+}
+
+.canciones li:nth-child(even){
+    background-color: whitesmoke;
+}
+
+#about h1, h1 + p{
+    text-align: center;
+}
+
+#about div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+#about div {
+    display: flex;
+    align-items: flex-start;
+}
+
+#cita img{
+    width: 30%;
+}
+
+#cita p{
+    font-style: italic;
+    text-align: left;
+    align-self: center;
+}
+
+#contacto h1{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#contacto form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto form input, textarea{
+    width: 100%;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+}
+
+#contacto form textarea{
+    height: 200px;
+    font-size: 120%;
+}
+
+#boton{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 2%;
+}
+
+#boton input, #botonEntradas input {
+    width: 18%;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#tour h1, h1 + p{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+h2{
+    text-align: left;
+    background-color: blueviolet;
+    color: white;
+    width: 48%;
+    font-size: 130%;
+    padding-left: 2%;
+}
+
+#tour div {
+    display: flex;
+    flex-direction: row;
+}
+
+#tour img, iframe{
+    width: 50%;
+}
+
+iframe{
+    border: none;
+    height: 400px;
+    align-self: start;
+    padding-right: 2%;
+}
+
+#botonEntradas {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+
+footer{
+    background-color: rgb(19, 19, 19);
+    padding: 3%;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
