@@ -15,6 +15,11 @@ body {
     flex-direction: column;
 }
 
+footer {
+    color: #383838;
+    background-color: rgb(219, 219, 219);
+}
+
 header {
     background-color: #644791;
 }
@@ -40,6 +45,8 @@ main a {
     font-weight: bold;
 }
 
+/*--------DISEÑO DESKTOP/TABLET----------*/
+@media only screen and (min-width: 933px) {
 .grid-navegacion {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -49,7 +56,7 @@ main a {
     width: 100%;
     margin: 0 10% 0 10%;
 }
-
+}
 
 .grid-item {
     justify-content: center;
@@ -85,7 +92,16 @@ main a {
 }
 
 
-footer {
-    color: #383838;
-    background-color: rgb(219, 219, 219);
+/*--------DISEÑO MOBILE----------*/
+@media only screen and (max-width: 932px) {
+
+.grid-navegacion {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
 }
