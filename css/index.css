@@ -15,24 +15,36 @@ body {
     flex-direction: column;
 }
 
+header {
+    background-color: #4b356d;
+}
+
+header h1{
+    color: white;
+    font-size: 1.7em;
+    padding: 1em 0 1em 2em;
+}
+
 main {
-    background-color: rgb(71, 145, 89);
+    background-color: #644791;
     flex: 1 0 auto;
     display: flex;
     align-items: center;
+    padding: 3em 0 3em 0;
 }
 
 main a {
-    text-decoration: none;
     color: white;
-    font-size: 1.5em;
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: bold;
 }
 
 .grid-navegacion {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 2em;
-    column-gap: 2em;
+    row-gap: 3em;
+    column-gap: 3em;
     text-align: center;
     width: 100%;
     margin: 0 10% 0 10%;
@@ -40,7 +52,7 @@ main a {
 
 .grid-item {
     justify-content: center;
-    padding: 5% 0 5% 0;
+    padding: 7% 0 7% 0;
     background-repeat: no-repeat;
     cursor: pointer;
     border-radius: 25px;
