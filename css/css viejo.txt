@@ -22,10 +22,6 @@
     text-decoration: none;
 }
 
-#menu span {
-    text-decoration: underline;
-}
-
 main{
     justify-content: center;
     padding: 5% 10%;
