@@ -50,6 +50,36 @@ p {
     line-height: 220%;
 }
 
+.list-canciones {
+    display: grid;
+    grid-template-areas: 
+    "ol .list-canciones-img";
+    justify-content: space-around;
+    grid-template-rows: 2fr 1fr;
+    gap: 5em;
+    margin: 0 auto;
+}
+
+.list-canciones ol {
+    text-align: left;
+}
+
+.list-canciones li{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-canciones li:nth-child(odd){
+    background-color: #644791;
+    color: #c2bacf;
+}
+
+.list-canciones li:nth-child(even){
+    background-color: #c2bacf;
+    color: #644791;
+}
+
 
 /*--------DISEÑO DESKTOP----------*/
 @media only screen and (min-width: 933px) {
@@ -80,25 +110,25 @@ p {
         transition: ease-in 0.2s;
     }
 
-#section-introduccion {
+#section-introduccion{
     display: flex;
     justify-content: space-between;
     margin: 3em 1em 0 1em;
     padding: 2em;
 }
 
-#text-introduccion {
+.primer-parrafo, #titulo-discografia{
     color: #4b356d;
     width: 100%;
     margin: 0 1em 0 0em;
     padding: 3em 3em 0 2em;
 }
 
-#text-introduccion p {
+.primer-parrafon p {
     text-align: justify;
 }
 
-#text-introduccion h2 {
+.primer-parrafo h2 {
     font-size: 2.5em;
     padding-bottom: 1em;
 }
@@ -140,11 +170,132 @@ blockquote {
     padding: 3em 3em 0 2em;
     text-align: justify;
 }
+
+.list-canciones li{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    width: 70vh;
+}
+
+.list-canciones-img {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 2em;
+}
+}
+
+
+/*--------DISEÑO TABLET----------*/
+@media only screen and (min-width: 601px) and (max-width: 932px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.5em;
+        padding: 1em 1em 0 0;
+    }
+
+    nav li {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #section-introduccion {
+        display: flex;
+        flex-direction: column;
+        margin: 1em 1em 0 1em;
+        padding: 2em;
+    }
+
+    .primer-parrafo {
+        color: #4b356d;
+        width: 100%;
+        margin: 0 1em 0 0em;
+        padding: 3em 3em 2em 2em;
+    }
+
+    .primer-parrafon p {
+        text-align: justify;
+    }
+
+    .primer-parrafo h2 {
+        font-size: 2em;
+        padding-bottom: 1em;
+    }
+
+    #img-introduccion img {
+        width: 100%;
+    }
+
+    #section-cita {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #c2bacf;
+        background-color: #644791;
+    }
+
+    blockquote {
+        font-size: 1.1em;
+        text-align: right;
+        font-style: italic;
+        padding: 1.5em;
+        width: 90%;
+    }
+
+    #section-cita {
+        width: 100%;
+    }
+
+    #section-biografia {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 2em;
+    }
+
+    #section-biografia img {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+    #section-cita img {
+        width: 100%;
+        margin: -1px;
+    }
+
+    #section-biografia {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 2em;
+    }
+
+
+#section-cita blockquote {
+    font-size: 1.1em;
+    padding: 1.5em;
+}
+
+.img-discografia img {
+    width: 100%;
 }
 
 
 /*--------DISEÑO MOBILE----------*/
-@media only screen and (max-width: 932px) {
+@media only screen and (max-width: 600px) {
 
 header {
     display: flex;
@@ -172,6 +323,7 @@ nav li {
 }
 
 h2 {
+    text-align: center;
     font-size: 1.5em;
     padding-bottom: 2em;
 }
