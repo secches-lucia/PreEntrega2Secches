@@ -16,17 +16,17 @@ body {
 }
 
 header {
-    background-color: #4b356d;
+    background-color: #644791;
 }
 
 header h1{
-    color: white;
+    color: #c2bacf;
     font-size: 1.7em;
     margin: 1em;
 }
 
 main {
-    background-color: #644791;
+    background-color: #c2bacf;
     flex: 1 0 auto;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ main {
 }
 
 main a {
-    color: white;
+    color: #c2bacf;
     text-decoration: none;
     font-size: 1.7em;
     font-weight: bold;
@@ -60,6 +60,7 @@ main a {
     width: 100%;
     position: relative;
     overflow: hidden;
+    background-image: url('../img/img-home.jpg');
 }
 
 .grid-item::before {
@@ -83,21 +84,6 @@ main a {
     z-index: 2;
 }
 
-#grid-item-1 {
-    background-image: url('../img/img-sobre-remi.jpg');
-}
-
-#grid-item-2 {
-    background-image: url('../img/img-discografia.jpg');
-}
-
-#grid-item-3 {
-    background-image: url('../img/img-tour.jpg');
-}
-
-#grid-item-4 {
-    background-image: url('../img/img-contacto.jpg');
-}
 
 footer {
     color: #383838;
