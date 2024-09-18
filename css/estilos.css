@@ -50,7 +50,11 @@ p {
     line-height: 220%;
 }
 
-.section-discografia h4, .section-discografia h4 {
+#section-biografia {
+    color: #4b356d;
+}
+
+.section-discografia h3, .section-discografia h4, .section-discografia p {
     color: #4b356d;
 }
 
@@ -77,6 +81,33 @@ p {
     color: #644791;
 }
 
+.img-discografia img{
+    width: 100%;
+}
+
+.section-discografia {
+    padding-bottom: 3em;
+}
+
+.section-discografia div + div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em 0 2em;
+    padding: 2em;
+}
+
+.section-discografia h3, #section-tour-mapa h3 {
+    font-size: 2em;
+}
+
+.section-discografia p {
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.section-titulo, .section-titulo + p, #section-tour-mapa h3 {
+    color: #4b356d;
+}
 
 /*--------DISEÑO DESKTOP----------*/
 @media only screen and (min-width: 933px) {
@@ -114,7 +145,7 @@ p {
     padding: 2em;
 }
 
-.primer-parrafo, #titulo-discografia{
+.primer-parrafo{
     color: #4b356d;
     width: 100%;
     margin: 0 1em 0 0em;
@@ -168,12 +199,14 @@ blockquote {
     text-align: justify;
 }
 
-#titulo-discografia {
-    padding: 3em;
+#section-titulo-discografia {
+    margin: 2em 2em 2em 2em;
 }
 
-.img-discografia img{
-    width: 100%;
+.section-discografia h4 {
+    text-align: center;
+    padding: 2em;
+    font-size: 1.7em;
 }
 
 .list-canciones li{
@@ -181,10 +214,27 @@ blockquote {
     width: 100vh;
 }
 
-.section-discografia h4, .section-discografia h4 {
-    text-align: center;
-    padding: 2em;
+#section-tour-mapa h3 {
+    font-size: 1.5em;
 }
+
+#grid-tour{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 2em;
+    margin: 2em 2em 2em 2em;
+}
+
+#grid-tour iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+    align-self: start;
+    padding-right: 2%;
+}
+
+
 }
 
 
@@ -288,6 +338,11 @@ blockquote {
     font-size: 1.1em;
     padding: 1.5em;
 }
+
+#section-titulo-discografia {
+    margin: 2em 2em 2em 2em;
+}
+
 }
 
 
@@ -363,5 +418,9 @@ blockquote {
     flex-direction: column;
     text-align: justify;
     padding: 2em;
+}
+
+#section-titulo-discografia {
+    margin: 2em 2em 0em 2em;
 }
 }
