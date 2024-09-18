@@ -45,7 +45,7 @@ main a {
     font-weight: bold;
 }
 
-/*--------DISEÑO DESKTOP/TABLET----------*/
+/*--------DISEÑO DESKTOP----------*/
 @media only screen and (min-width: 933px) {
 .grid-navegacion {
     display: grid;
@@ -90,6 +90,7 @@ main a {
     position: relative;
     z-index: 2;
 }
+
 
 
 /*--------DISEÑO MOBILE----------*/

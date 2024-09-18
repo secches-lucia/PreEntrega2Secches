@@ -50,18 +50,15 @@ p {
     line-height: 220%;
 }
 
-.list-canciones {
-    display: grid;
-    grid-template-areas: 
-    "ol .list-canciones-img";
-    justify-content: space-around;
-    grid-template-rows: 2fr 1fr;
-    gap: 5em;
-    margin: 0 auto;
+.section-discografia h4, .section-discografia h4 {
+    color: #4b356d;
 }
 
-.list-canciones ol {
-    text-align: left;
+.list-canciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .list-canciones li{
@@ -124,7 +121,7 @@ p {
     padding: 3em 3em 0 2em;
 }
 
-.primer-parrafon p {
+.primer-parrafo p {
     text-align: justify;
 }
 
@@ -171,18 +168,22 @@ blockquote {
     text-align: justify;
 }
 
-.list-canciones li{
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    width: 70vh;
+#titulo-discografia {
+    padding: 3em;
 }
 
-.list-canciones-img {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    gap: 2em;
+.img-discografia img{
+    width: 100%;
+}
+
+.list-canciones li{
+    padding: 1em;
+    width: 100vh;
+}
+
+.section-discografia h4, .section-discografia h4 {
+    text-align: center;
+    padding: 2em;
 }
 }
 
@@ -269,7 +270,6 @@ blockquote {
         width: 100%;
         margin: 0 auto;
     }
-}
 
     #section-cita img {
         width: 100%;
@@ -288,9 +288,6 @@ blockquote {
     font-size: 1.1em;
     padding: 1.5em;
 }
-
-.img-discografia img {
-    width: 100%;
 }
 
 
