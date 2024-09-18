@@ -27,7 +27,7 @@ main, h1, h2 {
 
 main {
     width: 100%;
-    background-color: rgb(24, 126, 126);
+    background-color: rgb(71, 145, 89);
     flex: 1 0 auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -45,4 +45,9 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2%;
+}
+
+footer {
+    color: #383838;
+    background-color: rgb(219, 219, 219);
 }
