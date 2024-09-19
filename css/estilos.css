@@ -102,47 +102,56 @@ p {
 
 .section-discografia p {
     text-align: justify;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 .section-titulo, .section-titulo + p, #section-tour-mapa h3 {
     color: #4b356d;
 }
 
+#section-tour-mapa {
+    margin: 2em 2em 2em 2em;
+    padding: 2em;
+}
+
+#section-tour-mapa div h3 {
+    text-align: center;
+}
+
 /*--------DISEÑO DESKTOP----------*/
 @media only screen and (min-width: 933px) {
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    header h1{
-        font-size: 1.7em;
-    }
+header h1{
+    font-size: 1.7em;
+}
 
-    nav ul {
-        display: flex;
-        gap: 2em;
-        padding: 1em 1em 0 0;
-    }
+nav ul {
+    display: flex;
+    gap: 2em;
+    padding: 1em 1em 0 0;
+}
     
-    nav li {
-        font-size: 1.1em;
-        text-align: center;
-    }
+nav li {
+    font-size: 1.1em;
+    text-align: center;
+}
     
-    nav a:hover {
-        color: #d7c5f3;
-        transition: ease-in 0.2s;
-    }
+nav a:hover {
+    color: #d7c5f3;
+    transition: ease-in 0.2s;
+}
 
 #section-introduccion{
     display: flex;
     justify-content: space-between;
-    margin: 3em 1em 0 1em;
-    padding: 2em;
+    margin: 3em 1em 0 2em;
+    font-size: 1.3em;
 }
 
 .primer-parrafo{
@@ -171,6 +180,7 @@ p {
     align-items: center;
     color: #c2bacf;
     background-color: #644791;
+    font-size: 1.2em;
 }
 
 blockquote {
@@ -194,9 +204,10 @@ blockquote {
     padding: 2em;
 }
 
-#section-biografia p {
-    padding: 3em 3em 0 2em;
+#section-biografia p{
+    margin: 3em 3em 0 3em;
     text-align: justify;
+    font-size: 1.5em;
 }
 
 #section-titulo-discografia {
@@ -209,9 +220,17 @@ blockquote {
     font-size: 1.7em;
 }
 
+.list-canciones ol {
+    font-size: 1.1em;
+}
+
 .list-canciones li{
     padding: 1em;
     width: 100vh;
+}
+
+#section-tour-mapa div h3 {
+    font-size: 3em;
 }
 
 #section-tour-mapa h3 {
@@ -234,6 +253,12 @@ blockquote {
     padding-right: 2%;
 }
 
+#grid-tour img{
+    width: 100%;
+    height: 100%;
+    align-self: start;
+    padding-right: 2%;
+}
 
 }
 
@@ -343,6 +368,11 @@ blockquote {
     margin: 2em 2em 2em 2em;
 }
 
+#section-tour-mapa div h3 {
+    font-size: 3em;
+    padding: 1em 0 1em 0;
+}
+
 }
 
 
@@ -374,7 +404,7 @@ nav li {
     text-align: right;
 }
 
-h2 {
+.section-titulo h2 {
     text-align: center;
     font-size: 1.5em;
     padding-bottom: 2em;
@@ -423,4 +453,10 @@ blockquote {
 #section-titulo-discografia {
     margin: 2em 2em 0em 2em;
 }
+
+#section-tour-mapa div h3 {
+    font-size: 1.7em;
+    padding: 2em 0 2em 0;
+}
+
 }
