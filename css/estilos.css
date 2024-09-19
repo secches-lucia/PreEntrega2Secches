@@ -118,6 +118,35 @@ p {
     text-align: center;
 }
 
+#main-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding: 3em;
+}
+
+#main-contacto h2 {
+    font-size: 2em;
+    padding: 1em;
+}
+
+#main-contacto p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#main-contacto li {
+    padding: 1em 0 1em 0;
+    display: flex;
+    justify-content: start;
+}
+
+#main-contacto label {
+    padding: 0 1em 0 0;
+}
+
+
 /*--------DISEÑO DESKTOP----------*/
 @media only screen and (min-width: 933px) {
 
@@ -260,8 +289,18 @@ blockquote {
     padding-right: 2%;
 }
 
+#main-contacto ul {
+    display: grid;
+    grid-template:
+    "nombre email" 1fr;
+    gap: 2em;
+    padding: 2em;
+    margin: 2em 2em 2em 2em;
 }
 
+#main-contacto textarea {
+    width: 100vh;
+}
 
 /*--------DISEÑO TABLET----------*/
 @media only screen and (min-width: 601px) and (max-width: 932px) {
@@ -373,8 +412,15 @@ blockquote {
     padding: 1em 0 1em 0;
 }
 
+#main-contacto textarea {
+    width: 40vh;
 }
 
+#terminos + label {
+    padding: 1em 0 1em 1em;
+
+}
+}
 
 /*--------DISEÑO MOBILE----------*/
 @media only screen and (max-width: 600px) {
@@ -405,6 +451,7 @@ nav li {
 }
 
 .section-titulo h2 {
+    color: #4b356d;
     text-align: center;
     font-size: 1.5em;
     padding-bottom: 2em;
@@ -459,4 +506,7 @@ blockquote {
     padding: 2em 0 2em 0;
 }
 
+#main-contacto textarea {
+    width: 40vh;
+}
 }

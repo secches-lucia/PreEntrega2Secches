@@ -30,7 +30,43 @@
 
 </header>
 
-<main>
+<main id="main-contacto">
+
+    <h2 class="section-titulo">Contacto</h2>
+    <p>¿Querés ponerte en contacto con Remi Wolf? ¡Dejanos tu mensaje!</p>
+
+<div id="form-contacto">
+    <form action="contacto.html" method="get">
+    <div id="form-input-datos">
+        <ul>
+          <li>
+            <label for="name">Nombre:</label>
+            <input type="text"  id="name" name="name">
+          </li>
+          <li>
+            <label for="lastname">Apellido:</label>
+            <input type="text"  id="lastname" name="lastname">
+          </li>
+          <li>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+          </li>
+          <li>
+            <textarea id="msg" name="msg" placeholder="Mensaje"></textarea>
+          </li>
+        </ul>
+    </div>
+        <div>
+            <input type="checkbox" id="terminos" name="terminos"/>
+            <label for="terminos">Acepto los <a href="https://i.pinimg.com/564x/17/c0/98/17c0989fe6ee37c81da2690956fbe768.jpg" target="_blank">términos y condiciones.</a></label>
+        </div>
+    </form>
+</div>
+
+    <div id="form-btn-envio">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </div>
 
 </main>
 
